@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { faker } = require('@faker-js/faker');  
+const { faker } = require('@faker-js/faker');  // Импортируем последнюю версию Faker
 const { Parser } = require('json2csv');
 
 const app = express();
@@ -15,7 +15,7 @@ app.get('/api/data', (req, res) => {
   // Устанавливаем seed для стабильно генерируемых данных
   faker.seed(Number(seed) + Number(page)); 
 
-  // Генерация фейковых данных (обновим эту логику позже для поддержки ошибок)
+  // Генерация фейковых данных
   const data = generateFakeData(region, errors, 20);
   
   res.json(data);
@@ -27,10 +27,10 @@ function generateFakeData(region, errors, count) {
   
   for (let i = 0; i < count; i++) {
     data.push({
-      id: faker.datatype.uuid(),
-      name: faker.name.findName(),
-      address: faker.address.streetAddress(),
-      phone: faker.phone.phoneNumber(),
+      id: faker.string.uuid(),               // Изменено на faker.string.uuid()
+      name: faker.person.fullName(),         // Изменено на faker.person.fullName()
+      address: faker.location.streetAddress(),// Изменено на faker.location.streetAddress()
+      phone: faker.phone.number(),           // Изменено на faker.phone.number()
     });
   }
   
