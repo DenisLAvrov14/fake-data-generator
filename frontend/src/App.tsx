@@ -1,18 +1,20 @@
 import React from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'; // Импортируем необходимые компоненты
-import DataContainer from './components/Data container/DataContainer';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import DataContainer from './components/dataContainer/DataContainer';
+import AppProvider from './appProvider/AppProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Создаём экземпляр QueryClient
 const queryClient = new QueryClient();
 
 const App: React.FC = () => {
   return (
-    <QueryClientProvider client={queryClient}> {/* Оборачиваем приложение в QueryClientProvider */}
-      <div className="App">
-        <h1>Fake Data Generator</h1>
-        <DataContainer />
-      </div>
-    </QueryClientProvider>
+    <AppProvider> 
+      <QueryClientProvider client={queryClient}>
+        <div className="App">
+          <DataContainer />
+        </div>
+      </QueryClientProvider>
+    </AppProvider>
   );
 };
 

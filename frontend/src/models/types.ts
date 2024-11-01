@@ -1,3 +1,4 @@
+
 export interface RegionSelectorProps {
     value: string;
     onChange: (region: string) => void;
@@ -16,7 +17,10 @@ export interface RegionSelectorProps {
   
   export interface DataTableProps {
     data: Array<RecordData>;
+    isLoading: boolean; 
+    onScrollEnd: () => void; 
   }
+  
   
   export interface RecordData {
     id: string;
