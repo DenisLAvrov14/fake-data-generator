@@ -5,12 +5,14 @@ const API_URL = 'http://localhost:5000';
 
 // Функция для получения данных с сервера
 export const fetchData = async (region: string, errors: number, seed: string, page: number = 1) => {
+  const timestamp = new Date().getTime(); // Добавляем временную метку
   const response = await axios.get(`${API_URL}/api/data`, {
     params: {
       region,
       errors,
       seed,
       page,
+      timestamp, // Передаем временную метку в качестве параметра
     },
   });
   return response.data;

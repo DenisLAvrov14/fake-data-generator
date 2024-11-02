@@ -12,13 +12,14 @@ const RegionSelector: React.FC<RegionSelectorProps> = ({ value, onChange }) => {
 
   return (
     <Form.Group controlId="region-selector" className="mb-3">
-      <Form.Label>Region:</Form.Label>
-      <Form.Select value={value} onChange={handleRegionChange}>
-        <option value="US">USA (English)</option>
-        <option value="PL">Poland (Polish)</option>
-        <option value="UZ">Uzbekistan (Uzbek)</option>
-      </Form.Select>
-    </Form.Group>
+    <Form.Label>Region:</Form.Label>
+    <Form.Select value={value} onChange={handleRegionChange}>
+      <option value="US">USA (English)</option>
+      <option value="PL">Poland (Polish)</option>
+      <option value="JP">Japan (Japanese)</option> 
+    </Form.Select>
+  </Form.Group>
+  
   );
 };
 

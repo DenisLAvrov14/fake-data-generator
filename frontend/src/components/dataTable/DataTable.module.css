@@ -1,0 +1,17 @@
+.tableContainer {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+  }
+  
+  .tableStyle {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  .columnWidth {
+    width: 25%;
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { Table, Spinner } from 'react-bootstrap';
 import { DataTableProps } from '../../models/types';
+import styles from './DataTable.module.css';
 
 const DataTable: React.FC<DataTableProps> = ({ data, isLoading, onScrollEnd }) => {
   const tableContainerRef = useRef<HTMLDivElement | null>(null);
@@ -25,23 +26,14 @@ const DataTable: React.FC<DataTableProps> = ({ data, isLoading, onScrollEnd }) =
   const rowCount = isLoading || data.length === 0 ? 20 : data.length;
 
   return (
-    <div
-      ref={tableContainerRef}
-      style={{
-        maxHeight: '500px',
-        overflowY: 'auto',
-        border: '1px solid #dee2e6',
-        borderRadius: '0.25rem',
-        padding: '10px',
-      }}
-    >
-      <Table striped bordered hover responsive className="mb-0" style={{ tableLayout: 'fixed', width: '100%' }}>
-        <thead>
+    <div ref={tableContainerRef} className={styles.tableContainer}>
+      <Table striped bordered hover responsive className={`mb-0 ${styles.tableStyle}`}>
+      <thead>
           <tr>
-            <th style={{ width: '25%' }}>ID</th>
-            <th style={{ width: '25%' }}>Name</th>
-            <th style={{ width: '25%' }}>Address</th>
-            <th style={{ width: '25%' }}>Phone</th>
+            <th className={styles.columnWidth}>ID</th>
+            <th className={styles.columnWidth}>Name</th>
+            <th className={styles.columnWidth}>Address</th>
+            <th className={styles.columnWidth}>Phone</th>
           </tr>
         </thead>
         <tbody>
