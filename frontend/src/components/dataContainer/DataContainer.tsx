@@ -60,7 +60,7 @@ const DataContainer: React.FC = () => {
     <Container className="mt-4">
       <h1 className="text-center mb-4">Fake Data Generator</h1>
 
-      <Card className="p-3 mb-4">
+      <Card className="p-3 mb-4" style={{ marginTop: '-20px' }}> {/* Уменьшаем верхний отступ */}
         <Row className="align-items-center">
           <Col md={4} sm={12} className="mb-2">
             <RegionSelector value={region} onChange={handleRegionChange} />

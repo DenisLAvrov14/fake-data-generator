@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 import { Table, Spinner } from 'react-bootstrap';
 import { DataTableProps } from '../../models/types';
-import styles from './DataTable.module.css';
+import styles from '../../styles/DataTable.module.css';
 
 const DataTable: React.FC<DataTableProps> = ({ data, isLoading, onScrollEnd }) => {
   const tableContainerRef = useRef<HTMLDivElement | null>(null);
