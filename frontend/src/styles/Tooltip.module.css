@@ -1,3 +1,25 @@
+.label {
+  padding: 0;
+  margin-top: -15px;
+}
+
+.slider {
+  margin: 10px auto 0 auto;
+}
+
+.numberInput {
+  width: 75px;
+  margin: 1px auto 0 auto;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.numberInput[type="number"]::-webkit-inner-spin-button, 
+.numberInput[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
 .tooltip {
   position: absolute;
   top: 100%;

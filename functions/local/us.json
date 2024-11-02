@@ -1,0 +1,25 @@
+{
+  "language": "US",
+  "names": [
+    "John Doe", "Jane Smith", "James Johnson", "Emily Davis", "Michael Brown",
+    "Sarah Wilson", "David Miller", "Jessica Taylor", "Thomas Anderson", "Laura Thompson",
+    "Daniel White", "Karen Harris", "Matthew Martin", "Olivia Moore", "Christopher Jackson",
+    "Amanda Clark", "Andrew Walker", "Rachel Young", "Joseph Hall", "Stephanie Allen",
+    "Michael Scott", "Patricia Lewis", "Anthony Robinson", "Barbara King", "Kevin Wright"
+  ],
+  "cities": [
+    "New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", 
+    "San Antonio", "San Diego", "Dallas", "San Jose", "Austin", "Jacksonville", 
+    "Fort Worth", "Columbus", "San Francisco", "Charlotte", "Indianapolis", 
+    "Seattle", "Denver", "Washington", "Boston", "El Paso", "Detroit", "Nashville", "Memphis"
+  ],
+  "streets": [
+    "Main St", "Broadway", "1st Ave", "2nd St", "3rd Ave", "4th St", "Elm St", "Maple Ave", 
+    "Oak St", "Pine St", "Cedar Ave", "Washington Blvd", "Lakeview Dr", "Hillcrest Rd", 
+    "Sunset Blvd", "Riverside Dr", "Church St", "Park Ave", "Spring St", "Franklin St", 
+    "Jefferson St", "Lincoln Ave", "Jackson Blvd", "Madison St", "Adams St"
+  ],
+  "phone_formats": [
+    "+1 (###) ###-####", "+1 ###-###-####", "+1 ### ### ####", "+1 (###) ### ####", "+1-###-###-####"
+  ]
+}

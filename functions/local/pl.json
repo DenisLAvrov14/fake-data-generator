@@ -1,0 +1,40 @@
+{
+  "language": "PL",
+  "names": [
+    "Anna Kowalska", "Jan Nowak", "Piotr Wiśniewski", "Katarzyna Dąbrowska", "Marek Lewandowski", 
+    "Ewa Wójcik", "Tomasz Kamiński", "Agnieszka Zielińska", "Andrzej Szymański", "Małgorzata Woźniak",
+    "Krzysztof Kozłowski", "Barbara Jankowska", "Stanisław Mazur", "Maria Wojciechowska", 
+    "Jerzy Kwiatkowski", "Zofia Krawczyk", "Grzegorz Kaczmarek", "Monika Piotrowska", 
+    "Mariusz Grabowski", "Jolanta Nowicka", "Łukasz Pawłowski", "Joanna Michalska", "Adam Adamczyk", 
+    "Elżbieta Dudek", "Rafał Zając", "Halina Wieczorek", "Paweł Jabłoński", "Renata Król", 
+    "Dariusz Majewski", "Danuta Olszewska", "Michał Jaworski", "Iwona Malinowska", "Maciej Pawlak", 
+    "Teresa Górska", "Jarosław Witkowski", "Alicja Walczak", "Szymon Stępień", "Ewelina Sikora", 
+    "Jakub Ostrowski", "Sylwia Baran", "Mateusz Szewczyk", "Magdalena Lis", "Kamil Wróbel", 
+    "Natalia Kaźmierczak", "Robert Sobczak", "Patrycja Głowacka", "Filip Musiał", 
+    "Olga Makowska", "Marcin Chmielewski", "Dominika Kubiak"
+  ],
+  "cities": [
+    "Warszawa", "Kraków", "Łódź", "Wrocław", "Poznań", "Gdańsk", "Szczecin", "Bydgoszcz", "Lublin", "Katowice",
+    "Białystok", "Gdynia", "Częstochowa", "Radom", "Toruń", "Kielce", "Gliwice", "Zabrze", "Olsztyn", "Rzeszów",
+    "Ruda Śląska", "Rybnik", "Tychy", "Dąbrowa Górnicza", "Opole", "Płock", "Elbląg", "Gorzów Wielkopolski", 
+    "Wałbrzych", "Włocławek", "Zielona Góra", "Legnica", "Tarnów", "Chorzów", "Koszalin", "Kalisz", "Grudziądz", 
+    "Słupsk", "Jaworzno", "Jastrzębie-Zdrój", "Nowy Sącz", "Jelenia Góra", "Konin", "Piła", "Inowrocław", 
+    "Lubin", "Ostrowiec Świętokrzyski", "Gniezno", "Mysłowice", "Zamość"
+  ],
+  "streets": [
+    "ul. Marszałkowska", "ul. Grunwaldzka", "ul. Piotrkowska", "ul. Świętokrzyska", 
+    "ul. Mickiewicza", "ul. Królewska", "ul. Długa", "ul. Polna", "ul. Leśna", 
+    "ul. Wojska Polskiego", "ul. Kościuszki", "ul. Sienkiewicza", "ul. Wesoła", 
+    "ul. Wyszyńskiego", "ul. Orzeszkowej", "ul. Łąkowa", "ul. Warszawska", "ul. Zamkowa", 
+    "ul. Dębowa", "ul. Kołłątaja", "ul. Ogrodowa", "ul. Kwiatowa", "ul. Poprzeczna", 
+    "ul. Lipowa", "ul. Brzozowa", "ul. Modrzewiowa", "ul. Chopina", "ul. Słowackiego", 
+    "ul. Konopnickiej", "ul. Wybickiego", "ul. Poniatowskiego", "ul. Krótka", "ul. Klonowa", 
+    "ul. Wschodnia", "ul. Zachodnia", "ul. Górna", "ul. Dolna", "ul. Kolejowa", "ul. Wierzbowa", 
+    "ul. Wieniawskiego", "ul. Malinowa", "ul. Gdańska", "ul. Wojska Polskiego", "ul. Rejtana", 
+    "ul. Radomska", "ul. Szkolna", "ul. Spacerowa", "ul. Dworcowa", "ul. Zielona", "ul. Podgórna"
+  ],
+  "phone_formats": [
+    "+48 ### ### ###", "+48 ## ### ## ##", "+48 ## ## ## ###", 
+    "## ### ## ##", "## ## ## ###", "### ### ###"
+  ]
+}

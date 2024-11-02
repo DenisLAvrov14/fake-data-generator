@@ -1,0 +1,36 @@
+{
+  "language": "JP",
+  "names": [
+    "Taro Sato", "Yuki Suzuki", "Kenta Takahashi", "Sakura Tanaka", "Haruto Ito", 
+    "Yui Watanabe", "Riku Nakamura", "Saki Yamamoto", "Ren Kobayashi", "Akari Kato", 
+    "Hiroshi Yoshida", "Naoko Yamada", "Kazuo Sasaki", "Miyuki Yamaguchi", "Takashi Matsumoto", 
+    "Aya Inoue", "Sho Kimura", "Aoi Hayashi", "Makoto Shimizu", "Rei Fujita", 
+    "Shin Okada", "Misaki Goto", "Takeshi Hasegawa", "Yumi Murakami", "Ryo Kondo", 
+    "Hitomi Ishikawa", "Eiji Sakai", "Sayaka Abe", "Shota Miyazaki", "Aiko Ueda", 
+    "Koji Mori", "Keiko Endo", "Daiki Nishimura", "Kaori Fukuda", "Fumiya Shibata", 
+    "Asuka Nakajima", "Yuya Miura", "Nozomi Takagi", "Masato Ishii", "Nao Maeda", 
+    "Akihiro Ogawa", "Miki Sugiyama", "Rina Nagata", "Satoshi Harada", "Manami Otsuka", 
+    "Yuto Uchida", "Satomi Ando", "Koichi Taniguchi", "Mai Nakano", "Koki Ikeda", 
+    "Saori Nishida"
+  ],
+  "cities": [
+    "東京", "大阪", "横浜", "名古屋", "札幌", "福岡", "神戸", "川崎", "埼玉", "広島", 
+    "仙台", "千葉", "北九州", "静岡", "堺", "熊本", "岡山", "浜松", "相模原", "鹿児島", 
+    "松山", "長崎", "長野", "金沢", "宇都宮", "青森", "前橋", "高崎", "八王子", "高松", 
+    "郡山", "藤沢", "一宮", "豊田", "豊橋", "岡崎", "宮崎", "長岡", "高知", "柏", 
+    "倉敷", "高槻", "姫路", "八代", "伊勢崎", "木更津", "三鷹", "船橋", "大津", "草津"
+  ],
+  "streets": [
+    "中央通り", "銀座通り", "表参道", "新宿通り", "浅草通り", "秋葉原通り", "渋谷通り", 
+    "原宿通り", "横浜通り", "川崎通り", "大阪通り", "長崎通り", "福岡通り", "札幌通り", 
+    "神戸通り", "上野通り", "三宮通り", "新橋通り", "恵比寿通り", "目黒通り", 
+    "池袋通り", "四谷通り", "六本木通り", "五反田通り", "松山通り", "銀座並木通り", 
+    "原宿竹下通り", "渋谷センター街", "下北沢通り", "吉祥寺通り", "三軒茶屋通り", 
+    "神田通り", "赤坂通り", "新中野通り", "大井町通り", "巣鴨通り", "代官山通り", 
+    "八王子通り", "府中通り", "調布通り", "西荻窪通り", "東村山通り", "清瀬通り", 
+    "千住通り", "京成立石通り", "市川通り", "船橋通り", "成田通り", "津田沼通り", "鎌ヶ谷通り"
+  ],
+  "phone_formats": [
+    "090-####-####", "080-####-####", "070-####-####", "03-####-####", "06-####-####"
+  ]
+}
