@@ -3,9 +3,12 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const { Parser } = require('json2csv');
+const functions = require('firebase-functions');
 
 const app = express();
-app.use(cors());
+
+// Добавление CORS с указанием домена вашего фронтенда
+app.use(cors({ origin: true }));
 
 const DATA_PATH = path.join(__dirname, 'local');
 
@@ -24,6 +27,7 @@ function loadRegionData(region) {
 // Генерация данных
 app.get('/api/data', (req, res) => {
   const { region, errors, seed, page } = req.query;
+  console.log('Получен запрос для /api/data с параметрами:', req.query);
 
   try {
     const parsedErrors = parseFloat(errors.replace(',', '.'));
@@ -150,4 +154,5 @@ app.get('/api/export', (req, res) => {
   res.send(csv);
 });
 
-module.exports = app;
+// Экспортируем приложение как функцию Firebase
+exports.api = functions.https.onRequest(app);

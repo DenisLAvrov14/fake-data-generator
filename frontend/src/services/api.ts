@@ -1,18 +1,18 @@
 import axios from 'axios';
 
 // Базовый URL для запросов к бэкенду
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://api-fz4h3ihjnq-uc.a.run.app';
 
 // Функция для получения данных с сервера
 export const fetchData = async (region: string, errors: number, seed: string, page: number = 1) => {
-  const timestamp = new Date().getTime(); // Добавляем временную метку
+  const timestamp = new Date().getTime(); 
   const response = await axios.get(`${API_URL}/api/data`, {
     params: {
       region,
       errors,
       seed,
       page,
-      timestamp, // Передаем временную метку в качестве параметра
+      timestamp, 
     },
   });
   return response.data;
