@@ -8,7 +8,7 @@ const functions = require('firebase-functions');
 const app = express();
 
 // Добавление CORS с указанием домена вашего фронтенда
-app.use(cors({ origin: true }));
+app.use(cors({ origin: 'https://fake-data-generator-b9b7b.web.app' }));
 
 const DATA_PATH = path.join(__dirname, 'local');
 
@@ -145,14 +145,19 @@ function distortPhoneNumber(phone) {
 }
 
 // Endpoint для экспорта в CSV
-app.get('/api/export', (req, res) => {
-  const { data } = req.query;
+app.post('/api/export', (req, res) => {
+  console.log("Data for export:", req.body); // Лог для проверки данных
   const parser = new Parser();
-  const csv = parser.parse(JSON.parse(data));
-
-  res.attachment('data.csv');
-  res.send(csv);
+  try {
+    const csv = parser.parse(req.body.data);
+    res.attachment('data.csv');
+    res.send(csv);
+  } catch (error) {
+    console.error("CSV Export Error:", error);
+    res.status(500).json({ error: 'Error generating CSV' });
+  }
 });
+
 
 // Экспортируем приложение как функцию Firebase
 exports.api = functions.https.onRequest(app);
